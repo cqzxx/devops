@@ -1,0 +1,149 @@
+# 05-复合语句
+
+> 复合语句是包含其它语句（语句组）的语句；它们会以某种方式影响或控制所包含其它语句的执行。   
+> [https://docs.python.org/zh-cn/3/reference/compound_stmts.html](https://docs.python.org/zh-cn/3/reference/compound_stmts.html)
+
+
+### 1. if 语句
+`if 语句`用于有条件的执行
+
+详见：[《入门04-条件语句》](/python/8369/)
+
+```python
+score = int(input('请输入分数：'))
+
+if 0 <= score <= 100:
+    if score < 60:
+        print('不及格')
+    elif score < 80:
+        print('良')
+    else:
+        print('优')
+else:
+    print('分数输入错误，分数范围为：0~100')
+```
+
+### 2. while 语句
+`while 语句`用于在表达式保持为真的情况下重复地执行
+
+详见：[《入门05-循环语句》](/python/0684/) [《循环中的 else 子句》](/adv/7118/)
+
+```python
+i = 0
+while i < 10:
+    print(i)
+    i += 1
+```
+
+### 3. for 语句
+`for 语句`用于对序列（例如字符串、元组或列表）或其他可迭代对象中的元素进行迭代
+
+详见：[《入门05-循环语句》](/python/0684/) [《循环中的 else 子句》](/adv/7118/)
+
+```python
+for i in range(10):
+    print(i)
+
+for c in 'hello':
+    print(c)
+
+for s in ['aa', 'bb', 'cc']:
+    print(s)
+```
+
+### 4. try 语句
+`try 语句`可为一组语句指定异常处理器和/或清理代码
+
+- `except 子句`指定一个或多个异常处理程序。
+- 如果存在无表达式的 `except 子句`，它必须是最后一个；它将匹配任何异常。
+- `finally 子句`指定一个 "清理" 处理程序。`finally 子句`总是会被执行。
+- 当发生异常后 `finally 子句`还是会被执行，异常会被临时保存，会在 `finally 子句`的末尾被重新引发。
+- 如果 `finally 子句`执行了 `return`, `break` 或 `continue` 语句，则被保存的异常会被丢弃。
+
+补充：[《异常中的 else 子句》](/adv/7118/)
+
+```python
+def divide(x, y):
+    try:
+        result = x / y
+    except ZeroDivisionError:
+        print("除数不能为0！")
+    else:
+        print("结果是", result)
+```
+
+### 5. with 语句
+`with 语句`用于包装带有使用[上下文管理器](https://docs.python.org/zh-cn/3/reference/datamodel.html#context-managers)定义的方法的代码块的执行。  
+这允许对普通的 `try ... except ... finally` 使用模式进行封装以方便地重用。
+
+- `with 语句`会保证如果 `__enter__()` 方法返回时未发生错误，则 `__exit__()` 将总是被调用。
+- 常用于文件操作，在文件操作完之后自动关闭文件。
+
+```python
+with open('123.txt') as f:
+    data = f.read()
+```
+
+### 6. match 语句
+`match 语句`（匹配语句）用于进行模式匹配。
+
+详见：[《match 语句》](/adv/2440/)
+
+```python
+def http_error(status):
+    match status:
+        case 400:
+            print('错误请求')
+        case 401 | 403 | 405:       # 或模式
+            print('不允许访问')
+        case 404:
+            print('未找到')
+        case _:                     # 通配符模式，_ 总是会匹配成功
+            print('其它错误')
+```
+
+### 7. 函数定义
+函数定义就是对用户自定义函数的定义。
+
+详见：[《入门06-函数》](/python/0508/) [《装饰器》](/code/4578/)
+
+```python
+def _sum(a, b):
+    return a + b
+```
+
+### 8. 类定义
+类定义就是对类对象的定义。
+
+详见：[《入门07-类》](/python/4807/)
+
+```python
+class Student():
+    """学生类"""
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+```
+
+### 9. 协程
+
+#### 9.1 协程函数
+- 使用 `async def` 语法定义的函数总是为协程函数，即使它们不包含 `await` 或 `async` 关键字。
+- `await` 表达式，`async for` 以及 `async with` 只能在协程函数体中使用。
+
+协程函数的例子:
+```python
+async def func(param1, param2):
+    do_stuff()
+    await some_coroutine()
+```
+
+#### 9.2 async for 语句
+- `async for 语句`允许方便地对异步可迭代对象进行迭代。
+- 只能在协程函数体之内使用，在协程函数体之外使用 `async for 语句`将引发 `SyntaxError`。
+
+#### 9.3 async with 语句
+- 与普通的 `with 语句`类似，区别是 `async with 语句`能够在其 `enter` 和 `exit` 方法中暂停执行。
+- 只能在协程函数体之内使用，在协程函数体之外使用 `async with 语句`将引发 `SyntaxError`。
+
+补充：[《协程的简单使用》](/code/5134/)
