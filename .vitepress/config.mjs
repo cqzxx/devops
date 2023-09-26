@@ -143,14 +143,22 @@ export default defineConfig({
       // label: '本页导航'
     },
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
+      { icon: 'github', link: 'https://github.com/shenxgan/devops' }
     ],
+    editLink: {
+      pattern: 'https://github.com/shenxgan/devops/edit/main/:path',
+      text: 'Edit this page on GitHub',
+      // text: '在 GitHub 上编辑此页',
+    },
     lastUpdated: {
-      text: 'Updated at',
-      formatOptions: {
-        dateStyle: 'full',
-        timeStyle: 'medium'
-      }
+      text: '最近更新',
+    },
+    search: {
+      provider: 'local'
+    },
+    footer: {
+      message: '<div>Powered By <a href="https://vitepress.dev/"><img style="display: unset; height: 21px; margin-bottom: -6px;" src="https://vitepress.dev/vitepress-logo-mini.svg"></img><b>VitePress</b></a></div>',
+      // copyright: 'Copyright © 2023-present Shenxgan'
     },
     // docFooter: {
     //   prev: '上一页',
