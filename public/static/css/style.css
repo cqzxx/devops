@@ -28,3 +28,21 @@
 .dark ::-webkit-scrollbar-thumb:hover {
   background-color: #fff6
 }
+
+.message img {
+  display: unset;
+  height: 21px;
+  margin-bottom: -6px;
+}
+
+.copyright img {
+  display: unset;
+  height: 16px;
+  margin-bottom: -4px;
+}
+
+.copyright a {
+  font-size: 12px;
+  margin: 0 5px;
+  color: grey;
+}

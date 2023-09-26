@@ -9,6 +9,22 @@ export default defineConfig({
   head: [
     ['link', { rel: 'icon', href: '/abc.png' }],
     ['link', { rel: 'stylesheet', href: '/static/css/style.css' }],
+    [
+      'script',
+      { async: '', src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3829557881750869', crossorigin: 'anonymous' }
+    ],
+    [
+      'script',
+      { async: '', src: 'https://www.googletagmanager.com/gtag/js?id=G-KTBK3TKH1D' }
+    ],
+    [
+      'script',
+      {},
+      `window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-KTBK3TKH1D');`
+    ],
   ],
   cleanUrls: true,  // 干净的路由，不带 .html
   // rewrites: {
@@ -160,8 +176,9 @@ export default defineConfig({
       provider: 'local'
     },
     footer: {
-      message: '<div>Powered By <a href="https://vitepress.dev/"><img style="display: unset; height: 21px; margin-bottom: -6px;" src="https://vitepress.dev/vitepress-logo-mini.svg"></img><b>VitePress</b></a></div>',
+      message: '<div>Powered By <a href="https://vitepress.dev/"><img src="https://vitepress.dev/vitepress-logo-mini.svg"></img><b>VitePress</b></a></div>',
       // copyright: 'Copyright © 2023-present Shenxgan'
+      copyright: '<a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11011302003970"><img src="https://www.beian.gov.cn/img/ghs.png" /><span>京公网安备11011302003970号</span></a><a href="https://beian.miit.gov.cn/" target="_blank">京ICP备2022012301号-1</a>'
     },
     // docFooter: {
     //   prev: '上一页',
@@ -170,5 +187,8 @@ export default defineConfig({
   },
   markdown: {
     lineNumbers: true,
+  },
+  sitemap: {
+    hostname: 'https://python-abc.xyz'
   },
 })

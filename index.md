@@ -4,22 +4,37 @@ layout: home
 
 hero:
   name: "运维开发笔记"
-  text: "运维开发者的工作学习笔记"
-  tagline: My great project tagline
+  tagline: 一个运维开发者的工作学习笔记
+  image:
+    src: /static/img/logo-large.png
+    alt: python-abc.xyz
   actions:
     - theme: brand
-      text: Markdown Examples
+      text: 开始阅读
       link: /markdown-examples
     - theme: alt
-      text: API Examples
+      text: 在 GitHub 上查看
       link: /api-examples
 
 features:
-  - title: Feature A
+  - title: Python
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
+  - title: Linux
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
+  - icon:
+      src: /static/img/7859_1.gif
+    title: 容器
+    details: Lorem ipsum...
+  - title: 前端
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+
+  - title: 安全
+    details: Lorem ipsum...
+  - title: 稳定
+    details: Lorem ipsum...
+  - title: 效率
+    details: Lorem ipsum...
+  - title: 成本
+    details: Lorem ipsum...
 ---
 
