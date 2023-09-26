@@ -6,7 +6,10 @@ export default defineConfig({
   lastUpdated: true,
   title: "运维开发笔记",
   description: "运维开发者的工作学习笔记",
-  head: [['link', { rel: 'icon', href: '/abc.png' }]],
+  head: [
+    ['link', { rel: 'icon', href: '/abc.png' }],
+    ['link', { rel: 'stylesheet', href: '/static/css/style.css' }],
+  ],
   cleanUrls: true,  // 干净的路由，不带 .html
   // rewrites: {
   //   'python/index.md': 'python/0083.md',
