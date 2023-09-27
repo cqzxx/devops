@@ -184,7 +184,7 @@ export default defineConfig({
       provider: 'local'
     },
     footer: {
-      message: '<div>Powered By <a href="https://vitepress.dev/"><img src="https://vitepress.dev/vitepress-logo-mini.svg"></img><b>VitePress</b></a></div>',
+      message: 'Powered By <a href="https://vitepress.dev/"><img src="https://vitepress.dev/vitepress-logo-mini.svg"></img><b>VitePress</b></a>',
       // copyright: 'Copyright © 2023-present Shenxgan'
       copyright: '<a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11011302003970"><img src="https://www.beian.gov.cn/img/ghs.png" /><span>京公网安备11011302003970号</span></a><a href="https://beian.miit.gov.cn/" target="_blank">京ICP备2022012301号-1</a>'
     },
