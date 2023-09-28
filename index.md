@@ -10,6 +10,9 @@ hero:
     alt: python-abc.xyz
   actions:
     - theme: brand
+      text: 开始浏览
+      link: /python/0083
+    - theme: alt
       text: 由 VitePress 驱动
       link: https://vitepress.dev/
     - theme: alt
@@ -36,5 +39,6 @@ features:
 ---
 
 <div style="margin-top: 20px; display: flex; justify-content: center;">
-  <a href="/python/7859" title="斐波那契-黄金螺旋"><img src="/static/img/7859_1.gif" alt=""></a>
+  <!-- <a href="/basic/7859" title="斐波那契-黄金螺旋"><img src="/static/img/7859_1.gif" alt=""></a> -->
+  <a href="/basic/9354" title="太极图"><img src="/static/img/9354_1.gif" alt=""></a>
 </div>
