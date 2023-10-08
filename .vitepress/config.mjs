@@ -43,6 +43,12 @@ export default defineConfig({
           { text: '常用代码', link: '/code/7857' },
         ]
       },
+      {
+        text: '前端',
+        items: [
+          { text: 'JavaScript', link: '/js/8038' },
+        ]
+      },
     ],
     sidebar: {
       '/python/': [
@@ -178,6 +184,15 @@ export default defineConfig({
               ]
             },
             { text: 'QQ 机器人', link: '/code/5807' },
+          ]
+        },
+      ],
+      '/js/': [
+        {
+          // text: '',
+          items: [
+            { text: '基础语法', link: '/js/8038' },
+            { text: '常用属性与方法', link: '/js/1845' },
           ]
         },
       ],
