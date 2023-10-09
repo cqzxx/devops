@@ -47,6 +47,7 @@ export default defineConfig({
         text: '前端',
         items: [
           { text: 'JavaScript', link: '/js/8038' },
+          { text: 'Vue.js', link: '/vuejs/9541' },
         ]
       },
     ],
@@ -144,7 +145,7 @@ export default defineConfig({
               ]
             },
             { text: '检测密码强度', link: '/basic/1092' },
-            { text: '检测自己的 basic 等级', link: '/basic/9103' },
+            { text: '检测自己的 python 等级', link: '/basic/9103' },
             { text: '读写文件', link: '/basic/6887' },
             { text: '注册登录系统（类）', link: '/basic/4007' },
             { text: '文字转二维码', link: '/basic/9604' },
@@ -193,6 +194,16 @@ export default defineConfig({
           items: [
             { text: '基础语法', link: '/js/8038' },
             { text: '常用属性与方法', link: '/js/1845' },
+          ]
+        },
+      ],
+      '/vuejs/': [
+        {
+          // text: '',
+          items: [
+            { text: '常用代码片段', link: '/vuejs/9541' },
+            { text: 'Vue 中使用 echarts', link: '/vuejs/3384' },
+            { text: 'Moment.js 库显示相对时间', link: '/vuejs/0858' },
           ]
         },
       ],
