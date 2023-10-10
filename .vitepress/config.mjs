@@ -44,6 +44,12 @@ export default defineConfig({
         ]
       },
       {
+        text: 'Linux',
+        items: [
+          { text: '常用命令', link: '/linux/2336' },
+        ]
+      },
+      {
         text: '前端',
         items: [
           { text: 'JavaScript', link: '/js/8038' },
@@ -204,6 +210,15 @@ export default defineConfig({
             { text: '常用代码片段', link: '/vuejs/9541' },
             { text: 'Vue 中使用 echarts', link: '/vuejs/3384' },
             { text: 'Moment.js 库显示相对时间', link: '/vuejs/0858' },
+          ]
+        },
+      ],
+      '/linux/': [
+        {
+          // text: '',
+          items: [
+            { text: 'Linux 常用命令', link: '/linux/2336' },
+            { text: 'Git 常用命令', link: '/linux/6749' },
           ]
         },
       ],
