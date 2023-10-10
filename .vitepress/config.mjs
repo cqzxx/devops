@@ -43,19 +43,9 @@ export default defineConfig({
           { text: '常用代码', link: '/code/7857' },
         ]
       },
-      {
-        text: 'Linux',
-        items: [
-          { text: '常用命令', link: '/linux/2336' },
-        ]
-      },
-      {
-        text: '前端',
-        items: [
-          { text: 'JavaScript', link: '/js/8038' },
-          { text: 'Vue.js', link: '/vuejs/9541' },
-        ]
-      },
+      { text: 'Linux', link: '/linux/2336' },
+      { text: '前端', link: '/fe/8038' },
+      { text: '运维', link: '/op/0473' },
     ],
     sidebar: {
       '/python/': [
@@ -194,22 +184,28 @@ export default defineConfig({
           ]
         },
       ],
-      '/js/': [
+      '/fe/': [
         {
-          // text: '',
+          text: 'CSS',
           items: [
-            { text: '基础语法', link: '/js/8038' },
-            { text: '常用属性与方法', link: '/js/1845' },
+            { text: 'css 图标旋转', link: '/fe/4733' },
+            { text: '滚动条美化', link: '/fe/3690' },
           ]
         },
-      ],
-      '/vuejs/': [
         {
-          // text: '',
+          text: 'JavaScript',
           items: [
-            { text: '常用代码片段', link: '/vuejs/9541' },
-            { text: 'Vue 中使用 echarts', link: '/vuejs/3384' },
-            { text: 'Moment.js 库显示相对时间', link: '/vuejs/0858' },
+            { text: 'js 基础语法', link: '/fe/8038' },
+            { text: 'js 常用属性与方法', link: '/fe/1845' },
+            { text: '使用 moment 库显示相对时间', link: '/fe/0858' },
+            { text: '点击复制到剪切板', link: '/fe/8504' },
+          ]
+        },
+        {
+          text: 'Vue.js',
+          items: [
+            { text: 'Vue 常用代码片段', link: '/fe/9541' },
+            { text: 'Vue 中使用 echarts', link: '/fe/3384' },
           ]
         },
       ],
@@ -219,6 +215,20 @@ export default defineConfig({
           items: [
             { text: 'Linux 常用命令', link: '/linux/2336' },
             { text: 'Git 常用命令', link: '/linux/6749' },
+          ]
+        },
+      ],
+      '/op/': [
+        {
+          // text: '',
+          items: [
+            { text: '运维四要素', link: '/op/0473' },
+          ]
+        },
+        {
+          text: '工具软件',
+          items: [
+            { text: 'Supervisor', link: '/op/0054' },
           ]
         },
       ],
