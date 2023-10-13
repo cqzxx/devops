@@ -215,6 +215,7 @@ export default defineConfig({
           items: [
             { text: 'Linux 常用命令', link: '/linux/2336' },
             { text: 'Git 常用命令', link: '/linux/6749' },
+            { text: 'systemctl 的使用', link: '/linux/7984' },
           ]
         },
       ],
