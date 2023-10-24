@@ -186,6 +186,12 @@ export default defineConfig({
       ],
       '/fe/': [
         {
+          text: 'HTML',
+          items: [
+            { text: 'Server-Sent Events', link: '/fe/5189' },
+          ]
+        },
+        {
           text: 'CSS',
           items: [
             { text: 'css 图标旋转', link: '/fe/4733' },
