@@ -238,6 +238,7 @@ export default defineConfig({
           text: '工具软件',
           items: [
             { text: 'Supervisor', link: '/op/0054' },
+            { text: 'Ansible 2.9', link: '/op/2103' },
           ]
         },
       ],
