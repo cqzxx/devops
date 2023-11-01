@@ -241,6 +241,13 @@ export default defineConfig({
             { text: 'Ansible 2.9', link: '/op/2103' },
           ]
         },
+        {
+          text: '脚本',
+          items: [
+            { text: '健康检查', link: '/op/0742' },
+            { text: '磁盘分区格式化挂载', link: '/op/7836' },
+          ]
+        },
       ],
     },
     outline: {
