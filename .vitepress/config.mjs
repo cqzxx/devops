@@ -202,9 +202,9 @@ export default defineConfig({
           text: 'JavaScript',
           items: [
             { text: 'js 基础语法', link: '/fe/8038' },
-            { text: 'js 常用属性与方法', link: '/fe/1845' },
             { text: 'js 字符串', link: '/fe/1596' },
             { text: 'js 数组', link: '/fe/4380' },
+            { text: 'js 代码片段', link: '/fe/1845' },
             { text: '使用 moment 库显示相对时间', link: '/fe/0858' },
             { text: '点击复制到剪切板', link: '/fe/8504' },
           ]
