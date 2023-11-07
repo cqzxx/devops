@@ -43,9 +43,8 @@ export default defineConfig({
           { text: '常用代码', link: '/code/7857' },
         ]
       },
-      { text: 'Linux', link: '/linux/2336' },
       { text: '前端', link: '/fe/8038' },
-      { text: '运维', link: '/op/0473' },
+      { text: 'Linux 运维', link: '/op/2336' },
     ],
     sidebar: {
       '/python/': [
@@ -217,17 +216,23 @@ export default defineConfig({
           ]
         },
       ],
-      '/linux/': [
+      '/op/': [
         {
-          // text: '',
+          text: 'Linux',
           items: [
-            { text: 'Linux 常用命令', link: '/linux/2336' },
-            { text: 'Git 常用命令', link: '/linux/6749' },
-            { text: 'systemctl 的使用', link: '/linux/7984' },
+            { text: 'Linux 常用命令', link: '/op/2336' },
+            { text: 'Git 常用命令', link: '/op/6749' },
+            { text: 'systemctl 的使用', link: '/op/7984' },
           ]
         },
-      ],
-      '/op/': [
+        {
+          text: '容器',
+          items: [
+            { text: 'docker 常用命令', link: '/op/3123' },
+            { text: 'docker-compose 常用命令', link: '/op/9661' },
+            { text: 'kubectl 常用命令', link: '/op/0154' },
+          ]
+        },
         {
           // text: '',
           items: [
