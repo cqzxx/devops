@@ -41,6 +41,7 @@ export default defineConfig({
           { text: '语法', link: '/python/0083' },
           { text: '练习题', link: '/basic/8301' },
           { text: '常用代码', link: '/code/7857' },
+          { text: 'web', link: '/web/8912' },
         ]
       },
       { text: '前端', link: '/fe/8038' },
@@ -180,6 +181,14 @@ export default defineConfig({
               ]
             },
             { text: 'QQ 机器人', link: '/code/5807' },
+          ]
+        },
+      ],
+      '/web/': [
+        {
+          text: 'Sanic 框架',
+          items: [
+            { text: 'Sanic 异步任务', link: '/web/8912' },
           ]
         },
       ],
