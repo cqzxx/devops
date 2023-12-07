@@ -261,6 +261,7 @@ export default defineConfig({
           items: [
             { text: '健康检查', link: '/op/0742' },
             { text: '磁盘分区格式化挂载', link: '/op/7836' },
+            { text: 'mongo 数据同步（备份恢复）', link: '/op/9388' },
           ]
         },
       ],
@@ -293,8 +294,11 @@ export default defineConfig({
     //   next: '下一页'
     // }
   },
+  // https://github.com/vuejs/vitepress/blob/main/src/node/markdown/markdown.ts
   markdown: {
     lineNumbers: true,
+    // https://github.com/antfu/shikiji/blob/main/docs/themes.md#all-themes
+    theme: { light: 'min-light', dark: 'min-dark' },
   },
   sitemap: {
     hostname: 'https://python-abc.xyz'
