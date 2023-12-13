@@ -222,6 +222,7 @@ export default defineConfig({
           items: [
             { text: 'Vue 常用代码片段', link: '/fe/9541' },
             { text: 'Vue 中使用 echarts', link: '/fe/3384' },
+            { text: '自定义组件', link: '/fe/4361' },
           ]
         },
       ],
