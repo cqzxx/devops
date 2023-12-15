@@ -242,6 +242,7 @@ export default defineConfig({
             { text: 'docker-compose 常用命令', link: '/op/9661' },
             { text: 'kubectl 常用命令', link: '/op/0154' },
             { text: 'k8s 创建 api token', link: '/op/7162' },
+            { text: 'python 调用 k8s api', link: '/op/7636' },
           ]
         },
         {
