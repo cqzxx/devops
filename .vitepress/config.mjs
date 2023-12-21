@@ -197,6 +197,7 @@ export default defineConfig({
           text: 'HTML',
           items: [
             { text: 'Server-Sent Events', link: '/fe/5189' },
+            { text: 'WebSocket 鉴权问题', link: '/fe/4770' },
           ]
         },
         {
