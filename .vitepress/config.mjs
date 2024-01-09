@@ -230,6 +230,12 @@ export default defineConfig({
       ],
       '/op/': [
         {
+          text: '运维平台',
+          items: [
+            { text: '审批流', link: '/op/0385' },
+          ]
+        },
+        {
           text: 'Linux',
           items: [
             { text: 'Linux 常用命令', link: '/op/2336' },
@@ -246,6 +252,12 @@ export default defineConfig({
             { text: 'k8s 创建 api token', link: '/op/7162' },
             { text: 'python 调用 k8s api', link: '/op/7636' },
             { text: 'python k8s web terminal', link: '/op/3114' },
+          ]
+        },
+        {
+          text: '监控告警',
+          items: [
+            { text: '进程端口监控', link: '/op/3640' },
           ]
         },
         {
