@@ -31,4 +31,5 @@ def new_code():
             break
 
 
-new_code()
+for i in range(5):
+    new_code()
