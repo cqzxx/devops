@@ -272,6 +272,7 @@ export default defineConfig({
           items: [
             { text: 'Supervisor', link: '/op/0054' },
             { text: 'Ansible 2.9', link: '/op/2103' },
+            { text: 'DbGate 的介绍与使用', link: '/op/0851' },
           ]
         },
         {
