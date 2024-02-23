@@ -260,6 +260,7 @@ export default defineConfig({
           text: '监控告警',
           items: [
             { text: '进程端口监控', link: '/op/3640' },
+            { text: '站点监控', link: '/op/0465' },
           ]
         },
         {
