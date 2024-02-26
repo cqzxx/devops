@@ -257,6 +257,12 @@ export default defineConfig({
           ]
         },
         {
+          text: '数据库',
+          items: [
+            { text: 'PostgreSQL', link: '/op/9257' },
+          ]
+        },
+        {
           text: '监控告警',
           items: [
             { text: '进程端口监控', link: '/op/3640' },
