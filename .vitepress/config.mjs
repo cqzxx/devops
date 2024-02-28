@@ -260,6 +260,7 @@ export default defineConfig({
           text: '数据库',
           items: [
             { text: 'PostgreSQL', link: '/op/9257' },
+            { text: 'MongoDB', link: '/op/1730' },
           ]
         },
         {
