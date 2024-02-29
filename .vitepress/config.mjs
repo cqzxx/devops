@@ -261,6 +261,7 @@ export default defineConfig({
           items: [
             { text: 'PostgreSQL', link: '/op/9257' },
             { text: 'MongoDB', link: '/op/1730' },
+            { text: 'Redis', link: '/op/2450' },
           ]
         },
         {
