@@ -288,6 +288,7 @@ export default defineConfig({
         {
           text: '脚本',
           items: [
+            { text: 'Shell 代码片段', link: '/op/7054' },
             { text: '健康检查', link: '/op/0742' },
             { text: '磁盘分区格式化挂载', link: '/op/7836' },
             { text: 'mongo 数据同步（备份恢复）', link: '/op/9388' },
