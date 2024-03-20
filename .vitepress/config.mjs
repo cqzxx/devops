@@ -259,6 +259,7 @@ export default defineConfig({
         {
           text: '数据库',
           items: [
+            { text: 'MySQL', link: '/op/1912' },
             { text: 'PostgreSQL', link: '/op/9257' },
             { text: 'MongoDB', link: '/op/1730' },
             { text: 'Redis', link: '/op/2450' },
@@ -306,11 +307,11 @@ export default defineConfig({
     ],
     editLink: {
       pattern: 'https://github.com/shenxgan/devops/edit/main/:path',
-      text: 'Edit this page on GitHub',
-      // text: '在 GitHub 上编辑此页',
+      // text: 'Edit this page on GitHub',
+      text: '在 GitHub 上编辑此页面',
     },
     lastUpdated: {
-      text: '最近更新',
+      text: '最后更新于',
     },
     search: {
       provider: 'local'
@@ -320,10 +321,10 @@ export default defineConfig({
       // copyright: 'Copyright © 2023-present Shenxgan'
       copyright: '<a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11011302003970"><img src="https://www.beian.gov.cn/img/ghs.png" /><span>京公网安备11011302003970号</span></a><a href="https://beian.miit.gov.cn/" target="_blank">京ICP备2022012301号-1</a>'
     },
-    // docFooter: {
-    //   prev: '上一页',
-    //   next: '下一页'
-    // }
+    docFooter: {
+      prev: '上一页',
+      next: '下一页'
+    }
   },
   // https://github.com/vuejs/vitepress/blob/main/src/node/markdown/markdown.ts
   markdown: {
