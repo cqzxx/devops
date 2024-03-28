@@ -1,15 +1,17 @@
 .ex-content {
   display: flex;
   /* flex-flow: column; */
-  flex-direction: column;
-  flex-wrap: wrap;
+  /* flex-direction: column; */
+  /* flex-wrap: wrap; */
   align-items: center;/*垂直居中*/
   justify-content: center;/*水平居中*/
-  width: 100vw;
-  height: calc(100vh - 64px);
+  /* width: 100vw; */
+  /* height: calc(100vh - 164px); */
   /* width: 100%; */
   /* height: 100%; */
-  min-height: 300px;
+  /* min-height: 300px; */
+  top: 10vh;
+  position: relative;
 }
 /* @media (width >= 400px) { */
 .ex-content .question {
@@ -86,4 +88,9 @@
 }
 .ex-content .next {
   float: right;
+}
+.ex-content pre {
+  background-color: #f6f6f7;
+  border-radius: 8px;
+  padding: 8px;
 }

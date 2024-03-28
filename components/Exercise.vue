@@ -3,7 +3,13 @@
     <div class="question">
       <span v-for="tag in tags" class="tag">{{ tag }}</span>
       <hr>
-      <b class="subject">{{ subject }}</b>
+
+      <b v-if="typeof subject == 'string'" class="subject">{{ subject }}</b>
+      <div v-else>
+        <div v-for="item in subject">
+          <component :is="item.component">{{ item.content }}</component>
+        </div>
+      </div>
       <hr>
       <div v-for="(item, index) in options" class="radio">
         <input type="radio" name="xxx" :id="index" @change="radioChange(index)" />

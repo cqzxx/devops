@@ -1,6 +1,7 @@
 import re
 import secrets
 import string
+import subprocess
 
 
 """
@@ -18,12 +19,21 @@ def get_current_codes():
     return codes
 
 
+def get_current_all_codes():
+    cmd = "find ./ -name '*.md' -not -path './node_modules/*'"
+    res = subprocess.run(
+        cmd, capture_output=True, shell=True,
+        check=True, encoding='utf-8')
+    codes = re.findall(r'.*(\d{4})\.md', res.stdout)
+    print('总共：', len(codes))
+    return codes
+
+
 def random_code():
     return ''.join(secrets.choice(string.digits) for i in range(4))
 
 
-def new_code():
-    codes = get_current_codes()
+def new_code(codes):
     while True:
         code = random_code()
         if code not in codes:
@@ -31,5 +41,7 @@ def new_code():
             break
 
 
-for i in range(5):
-    new_code()
+if __name__ == '__main__':
+    codes = get_current_all_codes()
+    for i in range(5):
+        new_code(codes)
