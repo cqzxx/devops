@@ -4,6 +4,7 @@ layout: home
 
 hero:
   name: "运维开发笔记"
+  text: " "
   tagline: 一个运维开发者的工作学习笔记
   image:
     src: /static/img/logo-large.png
@@ -40,5 +41,5 @@ features:
 
 <div style="margin-top: 20px; display: flex; justify-content: center;">
   <!-- <a href="/basic/7859" title="斐波那契-黄金螺旋"><img src="/static/img/7859_1.gif" alt=""></a> -->
-  <a href="/basic/9354" title="太极图"><img src="/static/img/9354_1.gif" alt=""></a>
+  <!-- <a href="/basic/9354" title="太极图"><img src="/static/img/9354_1.gif" alt=""></a> -->
 </div>
