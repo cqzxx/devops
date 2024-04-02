@@ -2,6 +2,7 @@
   <div class="ex-content">
     <div class="question">
       <span v-for="tag in tags" class="tag">{{ tag }}</span>
+      <span v-for="tag in $frontmatter.tags" class="tag">{{ tag }}</span>
       <hr>
 
       <b v-if="typeof subject == 'string'" class="subject">{{ subject }}</b>

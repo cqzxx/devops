@@ -34,7 +34,6 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     logo: '/abc.png',
     nav: [
-      // { text: 'Python', link: '/python/' },
       {
         text: 'Python',
         items: [
@@ -44,6 +43,7 @@ export default defineConfig({
           { text: 'web', link: '/web/8912' },
         ]
       },
+      { text: 'Python 在线练习', link: '/ex/0000' },
       { text: '前端', link: '/fe/8038' },
       { text: 'Linux 运维', link: '/op/2336' },
     ],
