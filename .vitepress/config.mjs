@@ -2,6 +2,14 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  vite: {
+    // https://vike.dev/broken-npm-package#workaround
+    ssr: {
+      noExternal: [
+        // 'echarts-wordcloud',
+      ],
+    },
+  },
   lang: "zh-CN",
   lastUpdated: true,
   title: "运维开发笔记",

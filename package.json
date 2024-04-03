@@ -4,13 +4,12 @@
     "docs:build": "vitepress build",
     "docs:preview": "vitepress preview"
   },
+  "type": "module",
   "devDependencies": {
     "vitepress": "^1.0.1"
   },
-  "type": "module",
   "dependencies": {
     "echarts": "^5.5.0",
-    "echarts-wordcloud": "^2.1.0",
     "vue-echarts": "^6.6.9"
   }
 }
